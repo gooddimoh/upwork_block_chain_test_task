@@ -28,14 +28,15 @@ body, html {
 }
 
 .notification {
-    width: 400px;
-    height: 40px;
     background-color: #608aff;
     border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px 3px #9ca3af;
 }
 
 .form input {
-    border: 1px solid red;
+    border: 2px solid red;
     border-radius: 4px;
 }
 
@@ -49,3 +50,83 @@ body, html {
     height: 40px;
     border-radius: 40px;
 }
+
+.grid-cols-12.justify-items-center {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.notification {
+    position: relative;
+    display: block;
+    margin: 10px 0px;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+}
+
+.content-text {
+    color: white;
+}
+
+.form {
+    border-radius: 0px;
+}
+
+/*.form input:after {*/
+/*content: "big alert";*/
+/*}*/
+
+.term {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input::placeholder {
+    color: red;
+}
+
+.form .notification p {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+}
+
+.form p {
+    text-align: right;
+    margin-bottom: 20px;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.submit {
+    width: 200px;
+    height: 40px;
+}
+
+input#submit {
+    width: 100%;
+    font-size: 16px;
+    height: 60px;
+    background-color: mediumspringgreen;
+    color: white;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 3px #9ca3af;
+}
+
+/*.content-text {*/
+/*display: flex;*/
+/*flex-direction: row;*/
+/*flex-wrap: wrap-reverse;*/
+/*align-items: flex-end;*/
+/*align-content: center;*/
+/*justify-content: space-evenly;*/
+/*}*/

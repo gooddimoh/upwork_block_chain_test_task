@@ -5,71 +5,54 @@
     <title>Title</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
 </head>
 <body>
-<div class="wrapper background">
-    <div class="form-container col-md-12">
-        <div class="col-md-12">
-            <div class="text">
-                <h1>Learn to code by <br> watching others</h1>
-                <p>See how experienced developers solve problems in real-time</p>
-                <p>Watching scripted tutorials is great, but understanding how</p>
-                <p>developers think is invaluable.</p>
-            </div>
-            <div class="notification">
-                <p><b>Try it free 7 days </b> then $20/mo. thereafter </p>
+<div class="wrapper background bg-blue-400 text-blue-400 min-h-screen flex items-center justify-center">
+    <div class="grid grid-cols-2 gap-2">
+        <div class="grid grid-cols-1 p-10 form-container justify-items-center form-control">
+            <div class=" p-10 rounded justify-items-center">
+                <div class="content-text">
+                    <h1>Learn to code by <br> watching others</h1>
+                    <br>
+                    <p>See how experienced developers solve problems in real-time <br>
+                        Watching scripted tutorials is great, but understanding how <br>
+                    </p>
+                    <p>developers think is invaluable. <br></p>
+                </div>
             </div>
         </div>
-        <div class="form">
-            <div class="max-w-md mx-auto bg-white shadow-xl rounded my-8">
-                <div class="text-center text-gray-600 py-4">Sign in with</div>
+        <div class="grid grid-cols-1 p-10 rounded form">
+            <div class="notification">
+                <p>Try it free 7 days then $20/mo. thereafter </p>
+            </div>
+            <div class="bg-white rounded my-8">
                 <div class="bg-gray-200 pt-8 pb-16">
-                    <div class="text-center text-gray-600 mb-6">Or sign in with Email & Password</div>
                     <div class="w-4/5 mx-auto">
-                        <div class="flex items-center bg-white rounded shadow-md mb-4">
-                            <input class="w-full h-12 focus:outline-none" type="email" name="email"
-                                   placeholder="Email">
-                            <span class="px-3">
-                              <svg class="fill-current text-gray-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg"
-                                   viewBox="0 0 20 20">
-                                  <path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
-
-
-                            </span>
+                        <div class="flex items-center bg-white rounded shadow-md mb-2">
+                            <input class="w-full h-12 focus:outline-none" type="email" name="firstname"
+                                   placeholder="First Name">
                         </div>
-                        <div class="flex items-center bg-white rounded shadow-md mb-4">
-                            <input class="w-full h-12 focus:outline-none" type="email" name="email"
-                                   placeholder="Email">
-                            <span class="px-3">
-                              <svg class="fill-current text-gray-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg"
-                                   viewBox="0 0 20 20">
-                                  <path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg>
-                            </span>
+                        <p class="error">First Name cannot be empty</p>
+                        <div class="flex items-center bg-white rounded shadow-md mb-2">
+                            <input class="w-full h-12 focus:outline-none" type="email" name="firstname"
+                                   placeholder="Last Name">
                         </div>
-                        <div class="flex items-center bg-white rounded shadow-md mb-4">
+                        <p class="error">Last Name cannot be empty</p>
+                        <div class="flex items-center bg-white rounded shadow-md mb-2">
                             <input class="w-full h-12 focus:outline-none" type="password" name="password"
                                    placeholder="Password">
-                            <span class="px-3">
-                          <svg class="fill-current text-gray-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg"
-                               viewBox="0 0 20 20">
-                              <path d="M4 8V6a6 6 0 1 1 12 0h-3v2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"/>
-                          </svg>
-                        </span>
                         </div>
-                        <div class="flex items-center bg-white rounded shadow-md mb-4">
+                        <p class="error">Looks like this is not an email</p>
+                        <div class="flex items-center bg-white rounded shadow-md mb-2">
                             <input class="w-full h-12 focus:outline-none" type="password" name="password"
                                    placeholder="Password">
-                            <span class="px-3"><svg class="fill-current text-gray-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                              <path d="M4 8V6a6 6 0 1 1 12 0h-3v2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"/>
-                          </svg></span>
                         </div>
-                        <div class="mb-4">
-                            <input type="checkbox" name="remember" class="mr-1">
-                            <label for="remember" class="text-sm text-gray-600">Remember me</label>
+                        <p class="error">Password cannot be empty</p>
+                        <input type="submit" id="submit" name="CLAIM YOUR FREE TRIAL" value="CLAIM YOUR FREE TRIAL">
+                        <div class="term">
+                            <p>By clicking the button, you are agreeing to our <span class="red">Terms and Service</span></p>
                         </div>
-                        <button class="bg-indigo-600 block mx-auto text-white text-sm uppercase rounded shadow-md px-6 py-2">
-                            Sign in
-                        </button>
                     </div>
                 </div>
             </div>
@@ -77,61 +60,6 @@
     </div>
 </div>
 
-<script>
-    // class a {}
-    // class a {}
-    // class a {}
-    //
-    // isNaN();
-    // is
-
-    import ''
-
-    ."";
-    export
-    ''.
-    " ";
-    export {name1, name2, …,
-    nameN
-    }
-    ;
-    export {variable1 as name1, variable2 as name2, …,
-    nameN
-    }
-    ;
-    export let name1, name2, …, nameN; // или var
-    export let name1 = …,
-    name2 = …, …,
-    nameN; // или var, const
-
-    export default выражение;
-    export default function (…)
-    { …
-    } // или class, function*
-    export default function name1(…)
-    { …
-    } // или class, function*
-    export {name1 as default, …
-    }
-    ;
-
-    export * from …;
-    export {name1, name2, …,
-    nameN
-    }
-    from …;
-    export {import1 as name1, import2 as name2, …,
-    nameN
-    }
-    from …;
-    var data = "data";
-    export * from "";
-
-    export * from "";
-
-
-    console.log(data);
-</script>
-
+<script type="application/javascript" src="js/index.js"></script>
 </body>
 </html>
