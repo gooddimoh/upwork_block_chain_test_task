@@ -120,6 +120,7 @@ input#submit {
     color: white;
     border: 1px solid transparent;
     box-shadow: 3px 3px 3px #9ca3af;
+    cursor: pointer;
 }
 
 /*.content-text {*/
